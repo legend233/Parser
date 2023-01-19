@@ -62,5 +62,6 @@ def tree():
                     print(f'{n} of {len(lst)}: {file_name}')
             except:
                 print('error')
+            n += 1
 
 tree()
