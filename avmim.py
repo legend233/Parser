@@ -57,7 +57,7 @@ def tree():
             try:
                 content = re.get(i).content
                 file_name = i[i.rfind('/')+1:]
-                with open(f'{path}{file_name}', 'w') as f:
+                with open(f'{path}{file_name}', 'wb') as f:
                     f.write(content)
                     print(f'{n} of {len(lst)}: {file_name}')
             except:
